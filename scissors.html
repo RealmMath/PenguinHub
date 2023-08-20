@@ -1,0 +1,17 @@
+<center><h1 style="font-family:'Courier New'">Penguin Gamebox | RPS</h1></center>
+<center><p style="font-family:'Courier New'">You Picked Scissors</p></center>
+<center><p id="random-text"></p></center>
+<style>
+body {
+  background-color: #00FFFF;
+}
+  </style>
+<script>
+var randomText = [
+"I Picked Rock! I Won! Better Luck Next Time!",
+"I Picked Scissors! It Was A Tie!",
+"I Picked Paper! I Lost. Good Game!"
+];
+
+document.getElementById("random-text").innerHTML = randomText[Math.floor(Math.random() * randomText.length)];
+</script>
