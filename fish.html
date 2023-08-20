@@ -1,0 +1,20 @@
+<center><h1 style="font-family:'Courier New'">Penguin Gamebox | Fish</h1></center>
+<center><p style="font-family:'Courier New'">You Picked Fish</p></center>
+<center><p id="random-text"></p></center>
+<style>
+body {
+  background-color: #ADD8E6;
+}
+  </style>
+<script>
+var randomText = [
+"Small Fish",
+"Bass Fish",
+"Gold Fish",
+"Boot",
+"Glass",
+"Rock"
+];
+
+document.getElementById("random-text").innerHTML = randomText[Math.floor(Math.random() * randomText.length)];
+</script>
