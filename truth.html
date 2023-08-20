@@ -1,0 +1,13 @@
+<p id="random-text"></p>
+
+<script>
+var randomText = [
+  "Is It True You ",
+  "She sells seashells by the seashore.",
+  "Peter Piper picked a peck of pickled peppers.",
+  "How much wood would a woodchuck chuck, if a woodchuck could chuck wood?",
+  "I scream, you scream, we all scream for ice cream."
+];
+
+document.getElementById("random-text").innerHTML = randomText[Math.floor(Math.random() * randomText.length)];
+</script>
